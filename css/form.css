@@ -1,0 +1,44 @@
+/* Formulário  */
+form{
+    width: 100%;
+    display: grid;
+    justify-content: center;
+}
+
+/* Campo de texto */
+form input[type="text"]{
+    border: 0;
+    border-bottom: 3.5px solid var(--cor-principal-35) ;
+    background: none;
+    outline: none;
+    padding-bottom: 10px;
+    color: var(--cor-principal-50);
+    transition: all 300ms ease-in-out;
+    font-weight: 900
+    ;
+}
+/* Animação do campo de texto  */
+form input[type="text"]:focus{
+    border-bottom: 3.5px solid var(--cor-principal-75) ;
+    outline: none;
+    transform: translateY(-2px);
+}
+
+/* Parágrafo formulário  */
+form p{
+    font-size: 12px;
+    text-align: center;
+    color: var(--cor-aviso);
+    font-weight: 750;
+}
+
+/* Botão do formulário  */
+form button{
+    background-color: var(--cor-principal-60);
+    color: rgba(255, 255, 255,0.35);
+    border-radius: 5px;
+    border: none;
+    padding: 5px 10px;
+}form button:hover{
+    background-color: var(--cor-principal-80);
+}

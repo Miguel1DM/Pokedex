@@ -1,0 +1,46 @@
+/* Importando arquivos de estilos auxiliares  */
+@import url("./tipografia.css");
+@import url("./form.css");
+@import url("./pokemon.css");
+
+/* Fonte  */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+/* Cores  */
+:root{
+    --cor-fundo: #C1E5FF;
+    --cor-principal: #4C7EFF;
+    --cor-aviso: rgba(255, 0, 0,0.75);
+    --cor-principal-35: rgba(76, 126, 255,0.35);
+    --cor-principal-50: rgba(76, 126, 255,0.50);
+    --cor-principal-60: rgba(76, 126, 255,0.60);
+    --cor-principal-75: rgba(76, 126, 255,0.75);
+    --cor-principal-80: rgba(76, 126, 255,0.80);
+}
+
+/* Todos Elementos  */
+*{
+    font-family: Inter;
+    transition: all 300ms ease-in-out;
+}
+
+/* Estilo da Página  */
+body{
+    background-color: var(--cor-fundo);
+}
+
+/* Estilo do Container da página  */
+.app{
+    width: 730px;
+    margin: 20px auto;
+    display: grid;
+    justify-content: center;
+}
+
+/* Responsividade para Mobile  */
+@media(max-width: 430px){
+    /* Estilo do Container da página  */
+    .app{
+        width: 310px;
+    }
+}

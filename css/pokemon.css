@@ -1,0 +1,140 @@
+/* Conteiner do Pokémon  */
+.app section {
+  width: 730px;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  display: grid;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 20px 95px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+/* Nome do Pokémon */
+.app section h1 {
+  color: var(--cor-principal);
+  filter: drop-shadow(2px 0 10px var(--cor-principal));
+  font-size: 36px;
+}
+
+/* Imagem do Pokémon  */
+.app section img {
+  width: 200px;
+  height: 205px;
+  margin: 0 auto;
+}
+
+/* Conteiner das informações do Pokémon  */
+.infoPokemon {
+  width: 609px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Conteiner de informações do Pokémon  */
+.infoPokemon div{
+    width: 195px;
+}
+
+/* Valor da informação  */
+.infoPokemon h1 {
+  font-size: 32px;
+  color: var(--cor-principal-50);
+}
+
+/* Titulo da informação  */
+.infoPokemon h2 {
+  font-size: 24px;
+  color: var(--cor-principal-75);
+}
+
+/* Tipos de Pokémon  */
+.infoPokemon div .aco{
+    color: rgba(192, 192, 192,0.5);
+}
+.infoPokemon div .agua{
+  color: rgba(0, 255, 255,0.5);
+}
+.infoPokemon div .dragao{
+  color: rgba(42, 0, 77, 0.5);
+}
+.infoPokemon div .eletrico{
+  color: rgba(2, 120, 255, 0.5);
+}
+.infoPokemon div .fada{
+  color: rgba(213, 2, 255, 0.5);
+}
+.infoPokemon div .fantasma{
+  color: rgba(255, 255, 255, 0.5);
+  filter: drop-shadow(0px 0px 15px black);
+}
+.infoPokemon div .fogo{
+  color: rgba(255, 0, 0, 0.5);
+}
+.infoPokemon div .gelo{
+  color: rgba(0, 255, 255, 0.35);
+}
+.infoPokemon div .inseto{
+  color: rgba(68, 14, 0, 0.5);
+}
+.infoPokemon div .lutador{
+  color: rgba(255, 94, 94, 0.5);
+}
+.infoPokemon div .normal{
+  color: rgba(0, 0, 0, 0.5);
+}
+.infoPokemon div .pedra{
+  color: rgba(80, 80, 80, 0.5);
+}
+.infoPokemon div .planta{
+  color: rgba(7, 78, 0, 0.75);
+}
+.infoPokemon div .psiquico{
+  color: rgba(157, 36, 255, 0.75);
+}
+.infoPokemon div .sombrio{
+  color: rgba(27, 0, 49, 0.75);
+}
+.infoPokemon div .terrestre{
+  color: rgba(51, 25, 0, 0.75);
+}
+.infoPokemon div .venenoso{
+  color: rgba(73, 0, 133, 0.75);
+}
+.infoPokemon div .voador{
+  color: rgba(255, 255, 255, 0.5);
+  filter: drop-shadow(0px 0px 15px black);
+}
+
+
+/* Responsividade para Mobile  */
+@media (max-width: 430px) {
+  /* Conteiner do Pokémon  */
+  .app section {
+    width: 360px;
+    padding: 20px 0;
+  }
+  /* Conteiner das informações do Pokémon  */
+  .infoPokemon {
+    width: 260px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  /* Valor da informação  */
+  .infoPokemon h1 {
+    font-size: 32px;
+  }
+
+  /* Peso do Pokémon  */
+  .infoPokemon div:nth-child(1) {
+    width: 100%;
+  }
+  /* Vida do Pokémon  */
+  .infoPokemon div:nth-child(4) {
+    width: 100%;
+  }
+}
