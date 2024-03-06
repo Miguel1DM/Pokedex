@@ -25,10 +25,11 @@ document.getElementById('btnConsulte').addEventListener('click', function () {
                 tiposPokemon.push(" " + tipoPokemon);
             }
 
+            document.getElementById("imgPokemon").setAttribute("src", `${itensPokemon.sprites.other.home.front_default}`)
             document.getElementById("nomePokemon").innerHTML = itensPokemon.name;
-            document.getElementById("pesoPokemon").innerHTML = itensPokemon.weight;
-            document.getElementById("tipoPokemon").innerHTML = itensPokemon;
-            document.getElementById("tipoPokemon").innerHTML = itensPokemon.stats[0].base_stat;
+            document.getElementById("pesoPokemon").innerHTML = `${itensPokemon.weight} KG`;
+            document.getElementById("tipoPokemon").innerHTML = tiposPokemon;
+            document.getElementById("alturaPokemon").innerHTML = itensPokemon.stats[0].base_stat;
 
             // listaPokemon.innerHTML=`
             //             <div id ="infoPokemon">
