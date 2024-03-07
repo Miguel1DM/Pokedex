@@ -39,6 +39,11 @@ body{
 
 /* Responsividade para Mobile  */
 @media(max-width: 430px){
+    *{
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
     /* Estilo do Container da página  */
     .app{
         width: 310px;
