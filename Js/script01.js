@@ -1,12 +1,13 @@
+let teste = document.getElementById('teste');
+
+teste.style.display = 'none';
+
 document.getElementById('btnConsulte').addEventListener('click', function () {
 
     const tiposPokemon = [];
 
     //Declarando que a variável 'nomePokenon' é igual ao valor digitado no input
     let nomePokemon = document.getElementById('inputPokemon').value;
-
-    //Delcarando que a variável 'listaPokemon' é iguel a div HTMl 'lisPokemon'
-    const listaPokemon = document.getElementById('lisPokemon');
 
     fetch(`https://pokeapi.co/api/v2/pokemon/${nomePokemon}/`)
 
@@ -29,21 +30,28 @@ document.getElementById('btnConsulte').addEventListener('click', function () {
             document.getElementById("nomePokemon").innerHTML = itensPokemon.name;
             document.getElementById("pesoPokemon").innerHTML = `${itensPokemon.weight} KG`;
             document.getElementById("tipoPokemon").innerHTML = tiposPokemon;
-            document.getElementById("alturaPokemon").innerHTML = itensPokemon.stats[0].base_stat;
+            document.getElementById("alturaPokemon").innerHTML = itensPokemon.height;
+            document.getElementById("vidaPokemon").innerHTML = itensPokemon.stats[0].base_stat;
 
-            // listaPokemon.innerHTML=`
-            //             <div id ="infoPokemon">
-            //                 <p> Nome: ${itensPokemon.name}</p>
-            //                 <p> Peso: ${itensPokemon.weight}</p>
-            //                 <p> Tipo: ${tiposPokemon}</p>
-            //                 <p> vida: ${itensPokemon.stats[0].base_stat}</p>
-            //             </div>
-            //                 ` 
+            teste.style.display = 'grid';
+
         })
-        .catch(error => () => {
-            let erroElemento = document.createElement("h1");
+        .catch(error => {
+            // Manipula o erro da requisição
+            teste.style.display = 'none';
+            let erroElemento = document.createElement("h3");
             erroElemento.style.color = 'red';
-            document.querySelector("body").appendChild(erroElemento);  
-        })
+            erroElemento.id = 'erroPokemon';
+            erroElemento.textContent = `Erro, pokemon: ${nomePokemon}, não existe`;
+            document.querySelector("body").appendChild(erroElemento);
+        });
+
+    document.getElementById('btnConsulte').addEventListener('click', function () {
+        // Limpando mensagens de erro anteriores
+        let erroElemento = document.getElementById('erroPokemon');
+        if (erroElemento) {
+            erroElemento.remove();
+        }
+    })
 })
 
