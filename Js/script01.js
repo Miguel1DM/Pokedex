@@ -7,7 +7,7 @@ document.getElementById('btnConsulte').addEventListener('click', function () {
     const tiposPokemon = [];
 
     //Declarando que a variável 'nomePokenon' é igual ao valor digitado no input
-    let nomePokemon = document.getElementById('inputPokemon').value;
+    let nomePokemon = document.getElementById('inputPokemon').value.toLowerCase();
 
     fetch(`https://pokeapi.co/api/v2/pokemon/${nomePokemon}/`)
 
