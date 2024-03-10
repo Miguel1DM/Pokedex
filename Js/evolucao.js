@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', async function(){
     // Como existem diversos pokemons com vários números de evoluções o Json é diferente dependendo do número
     //de evoluções, por isso é feita uma validação para saber o tamanho do Array de evoluções no Json
     //esse array de OBj tem o nome de 'evolves_to'
-    if( evolucoesPokemon.chain.evolves_to.length > 1){
+    if( evolucoesPokemon.chain.evolves_to.length > 2){
 
         // se o tamanho do Array for maior que 1 ou seja, ter mais de duas evoluções dentro do Array
         //O nome dessas evoluções é colocadas dentro do Array 'evolucoes'
@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', async function(){
         }
 
     // Se o Pokemon tiver 2 evoluções
-    }else if(evolucoesPokemon.chain.evolves_to.length == 1){
+    }else if(evolucoesPokemon.chain.evolves_to[0].evolves_to[0] == null ){
 
         evolucao1 = evolucoesPokemon.chain.species.name;
         evolucao2 = evolucoesPokemon.chain.evolves_to[0].species.name;
