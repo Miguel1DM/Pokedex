@@ -1,10 +1,10 @@
+document.addEventListener('DOMContentLoaded', function(){
+    document.getElementById('divEvolucao').style.display = 'none';
+    document.getElementById('pokemon').style.display = 'none';
+});
+
 let pokemon = document.getElementById('pokemon');
 let evolucao = document.getElementById('divEvolucao');
-
-document.addEventListener('DOMContentLoaded', function(){
-    pokemon.style.display = 'none';
-    evolucao.style.display = 'none';
-});
 
 document.getElementById('btnConsulte').addEventListener('click', async function () {
     let erroElemento = document.getElementById("erroPokemon");
