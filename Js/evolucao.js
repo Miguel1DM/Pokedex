@@ -49,21 +49,25 @@ document.addEventListener('DOMContentLoaded', async function(){
         }
 
     // Se o Pokemon tiver 2 evoluções
-    }else if(evolucoesPokemon.chain.evolves_to[0].evolves_to[0] == null ){
+    }else if(evolucoesPokemon.chain.evolution_details.length === 0 && evolucoesPokemon.chain.evolves_to.length === 0){
 
-        evolucao1 = evolucoesPokemon.chain.species.name;
-        evolucao2 = evolucoesPokemon.chain.evolves_to[0].species.name;
-
-        infosPokemon(`https://pokeapi.co/api/v2/pokemon/${evolucao1}/`,evolucao1, 'pokemon');
-        infosPokemon(`https://pokeapi.co/api/v2/pokemon/${evolucao2}/`,evolucao2, 'pokemon');
-
-    // Se o Pokemon não tiver evolções
-    }else if(evolucoesPokemon.chain.evolves_to.length == 0){
         if(window.confirm("Esse Pokemon não tem evoluções")){
             window.location.href = 'index.html';
         }else{
             window.location.href = 'index.html';
         }
+
+        infosPokemon(`https://pokeapi.co/api/v2/pokemon/${evolucao1}/`,evolucao1, 'pokemon');
+        infosPokemon(`https://pokeapi.co/api/v2/pokemon/${evolucao2}/`,evolucao2, 'pokemon');
+
+    // Se o Pokemon não tiver evoluções
+    }else if(evolucoesPokemon.chain.evolves_to[0].evolves_to[0] == null ){
+        
+        evolucao1 = evolucoesPokemon.chain.species.name;
+        evolucao2 = evolucoesPokemon.chain.evolves_to[0].species.name;
+        
+        infosPokemon(`https://pokeapi.co/api/v2/pokemon/${evolucao1}/`,evolucao1, 'pokemon');
+        infosPokemon(`https://pokeapi.co/api/v2/pokemon/${evolucao2}/`,evolucao2, 'pokemon');
 
     // Se o Pokemon tiver 3 evoluções
     }else{
