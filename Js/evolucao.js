@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', async function(){
             infosPokemon(`https://pokeapi.co/api/v2/pokemon/${evolucoes[i]}/`,evolucoes[i], 'pokemon');
         }
 
-    // Se o Pokemon tiver 2 evoluções
+    // Se o Pokemon não tiver evoluções
     }else if(evolucoesPokemon.chain.evolution_details.length === 0 && evolucoesPokemon.chain.evolves_to.length === 0){
 
         if(window.confirm("Esse Pokemon não tem evoluções")){
@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', async function(){
         infosPokemon(`https://pokeapi.co/api/v2/pokemon/${evolucao1}/`,evolucao1, 'pokemon');
         infosPokemon(`https://pokeapi.co/api/v2/pokemon/${evolucao2}/`,evolucao2, 'pokemon');
 
-    // Se o Pokemon não tiver evoluções
+    // Se o Pokemon tiver 2 evoluções
     }else if(evolucoesPokemon.chain.evolves_to[0].evolves_to[0] == null ){
         
         evolucao1 = evolucoesPokemon.chain.species.name;
