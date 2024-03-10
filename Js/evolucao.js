@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', async function(){
 
     // Como existem diversos pokemons com vários números de evoluções o Json é diferente dependendo do número
     //de evoluções, por isso é feita uma validação para saber o tamanho do Array de evoluções no Json
-    //esse arry de OBj tem o nome de 'evolves_to'
+    //esse array de OBj tem o nome de 'evolves_to'
     if( evolucoesPokemon.chain.evolves_to.length > 1){
 
         // se o tamanho do Array for maior que 1 ou seja, ter mais de duas evoluções dentro do Array
@@ -56,6 +56,14 @@ document.addEventListener('DOMContentLoaded', async function(){
 
         infosPokemon(`https://pokeapi.co/api/v2/pokemon/${evolucao1}/`,evolucao1, 'pokemon');
         infosPokemon(`https://pokeapi.co/api/v2/pokemon/${evolucao2}/`,evolucao2, 'pokemon');
+
+    // Se o Pokemon não tiver evolções
+    }else if(evolucoesPokemon.chain.evolves_to.length == 0){
+        if(window.confirm("Esse Pokemon não tem evoluções")){
+            window.location.href = 'index.html';
+        }else{
+            window.location.href = 'index.html';
+        }
 
     // Se o Pokemon tiver 3 evoluções
     }else{
