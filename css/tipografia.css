@@ -1,7 +1,0 @@
-/* Tipografia  */
-.titulo{
-    color: var(--cor-principal);
-    font-size: 64px;
-    text-align: center;
-    filter: drop-shadow(2px 0 10px var(--cor-principal));
-}
