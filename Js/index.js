@@ -46,6 +46,8 @@ document.getElementById('btnConsulte').addEventListener('click', async function 
                 tiposPokemon.push(" " + capitalizeString(tipoPokemon));
             }
 
+            nomePokemon = itensPokemon.name;
+            
             document.getElementById("nomePokemon").innerHTML = capitalizeString(nomePokemon);
             document.getElementById("imgPokemon").setAttribute("src", `${itensPokemon.sprites.other.home.front_default}`)
             document.getElementById("pesoPokemon").innerHTML = `${convertorHgKg(itensPokemon.weight)} KG`;
