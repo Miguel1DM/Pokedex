@@ -28,9 +28,6 @@ document.getElementById('btnConsulte').addEventListener('click', async function 
     //Declarando que a variável 'nomePokenon' é igual ao valor digitado no input
     let nomePokemon = document.getElementById('inputPokemon').value.toLowerCase();
 
-    // Salvando o nome do Pokemon no LocalStorage
-    localStorage.setItem('nomePokemonIndex', document.getElementById('inputPokemon').value);
-
     await fetch(`https://pokeapi.co/api/v2/pokemon/${nomePokemon}`)
 
         .then(resp => resp.json())
@@ -92,5 +89,9 @@ document.getElementById('btnConsulte').addEventListener('click', async function 
             console.log(error)
             erroElemento.innerHTML = "Pokemon não encontrado"
         });
-})
 
+        console.log(nomePokemon)
+         // Salvando o nome do Pokemon no LocalStorage
+        localStorage.setItem('nomePokemonIndex', document.getElementById('inputPokemon').value);
+        
+})
