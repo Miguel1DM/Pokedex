@@ -1,5 +1,7 @@
 let pokemon = document.getElementById('pokemon');
+let evolucao = document.getElementById('divEvolucao');
 pokemon.style.display = 'none';
+evolucao.style.display = 'none';
 
 document.getElementById('btnConsulte').addEventListener('click', async function () {
     let erroElemento = document.getElementById("erroPokemon");
@@ -47,8 +49,9 @@ document.getElementById('btnConsulte').addEventListener('click', async function 
             }
 
             nomePokemon = itensPokemon.name;
-            
-            document.getElementById("nomePokemon").innerHTML = capitalizeString(nomePokemon);
+
+
+            document.getElementById("nomePokemon").innerHTML = capitalizeString(nomePokemon) + " ";
             document.getElementById("imgPokemon").setAttribute("src", `${itensPokemon.sprites.other.home.front_default}`)
             document.getElementById("pesoPokemon").innerHTML = `${convertorHgKg(itensPokemon.weight)} KG`;
             document.getElementById("tipoPokemon").innerHTML = tiposPokemon;
@@ -80,6 +83,7 @@ document.getElementById('btnConsulte').addEventListener('click', async function 
 
 
             pokemon.style.display = 'flex';
+            evolucao.style.display = 'flex';
         })
         .catch(error => {
             // Manipula o erro da requisição
@@ -89,7 +93,4 @@ document.getElementById('btnConsulte').addEventListener('click', async function 
             erroElemento.innerHTML = "Pokemon não encontrado"
         });
 })
-
-
-
 
