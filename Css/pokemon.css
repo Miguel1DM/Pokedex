@@ -103,6 +103,20 @@
   color: var(--cor-principal-75);
 }
 
+.link{
+  color: #3498db; /* Azul claro */
+  text-decoration: none; /* Remover sublinhado padrão */
+  color: var(--cor-principal);
+  font-size: 30px;
+  font-weight: normal;
+  text-align: center;
+  filter: drop-shadow(2px 0 10px var(--cor-principal));
+}
+
+.link:hover {
+  color: #2980b9; /* Cor azul mais escura ao passar o mouse */
+}
+
 /* Responsividade para Mobile  */
 @media (max-width: 430px) {
   /* Conteiner do Pokémon  */
