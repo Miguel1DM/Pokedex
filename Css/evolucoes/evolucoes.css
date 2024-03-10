@@ -1,0 +1,42 @@
+#titulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+#pokemon{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+img{
+    height: 400px;
+    width: 400px;
+}
+
+#mudarPokemon{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cor-principal-60);
+    color: rgba(255, 255, 255,0.9);
+    border-radius: 5px;
+    border: none;
+    padding: 5px 10px;
+}
+
+#mudarPokemon:hover{
+    background-color: var(--cor-principal-80);
+}
+
+#titulo{
+    color: var(--cor-principal);
+    font-size: 64px;
+    text-align: center;
+    filter: drop-shadow(2px 0 10px var(--cor-principal));
+}
+    
+

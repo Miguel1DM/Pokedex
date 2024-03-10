@@ -1,0 +1,57 @@
+/* Tipos de Pokémon  */
+.infoPokemon div .steel {
+  color: rgba(86, 160, 202, 0.5);
+}
+.infoPokemon div .water {
+  color: rgba(0, 89, 255, 0.5);
+}
+.infoPokemon div .dragon {
+  color: rgba(42, 0, 77, 0.5);
+}
+.eletric {
+  color: rgba(229, 255, 0, 0.5);
+}
+.infoPokemon div .fairy {
+  color: rgba(213, 2, 255, 0.5);
+}
+.infoPokemon div .ghost {
+  color: rgba(62, 39, 100, 0.5);
+  filter: drop-shadow(0px 0px 15px black);
+}
+.infoPokemon div .fire {
+  color: rgba(255, 39, 39, 0.5);
+}
+.infoPokemon div .ice {
+  color: rgba(0, 255, 242, 0.35);
+}
+.infoPokemon div .bug {
+  color: rgba(58, 105, 62, 0.5);
+}
+.infoPokemon div .fighting {
+  color: rgba(255, 94, 94, 0.5);
+}
+.infoPokemon div .normal {
+  color: rgba(136, 136, 136, 0.5);
+}
+.infoPokemon div .rock {
+  color: rgba(82, 69, 55, 0.5);
+}
+.infoPokemon div .grass {
+  color: rgba(11, 82, 4, 0.75);
+}
+.infoPokemon div .psychic {
+  color: rgba(157, 36, 255, 0.75);
+}
+.infoPokemon div .dark {
+  color: rgba(51, 25, 0, 0.75);
+}
+.infoPokemon div .ground {
+  color: rgba(126, 61, 0, 0.75);
+}
+.infoPokemon div .poison {
+  color: rgba(121, 33, 194, 0.75);
+}
+.infoPokemon div .flying {
+  color: rgba(146, 211, 255, 0.5);
+  filter: drop-shadow(0px 0px 15px black);
+}

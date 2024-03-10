@@ -1,0 +1,151 @@
+/* Conteiner do Pokémon  */
+.pokemon {
+  width: 520px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 40px 95px;
+  text-align: center;
+  border-radius: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Cabeçalho das informações do Pokemon  */
+.pokemon header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+/* Nome do Pokémon */
+.pokemon .tituloPokemon {
+  width: 50%;
+  color: var(--cor-principal);
+  filter: drop-shadow(2px 0 10px var(--cor-principal));
+  font-size: 36px;
+}
+
+/* Formulário de info do pokemon  */
+.pokemon form {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  height: max-content;
+  align-items: center;
+  margin: 10px 0;
+  gap: 10px;
+}
+
+/* Texto do Formuláio  */
+.pokemon form label{
+  color: var(--cor-principal);
+  filter: drop-shadow(2px 0 10px var(--cor-principal-75));
+  font-size: 14px;
+  border: 2px solid var(--cor-principal-50);
+  padding: 5px 8px;
+  border-radius: 10px;
+}
+/* Animação de input checado  */
+.pokemon form input:checked ~ label{
+  background-color: var(--cor-principal-75);
+  color: white;
+}
+
+/* elementos do formulário do pokemon  */
+.pokemon form * {
+  width: max-content;
+  height: max-content;
+
+}
+
+.pokemon .containerImg{
+  width: 100%;
+}
+/* Imagem do Pokémon  */
+.pokemon img {
+  width: 200px;
+  height: 205px;
+  margin: 0 auto;
+}
+
+/* Conteiner das informações do Pokémon  */
+.infoPokemon {
+  width: 50%;
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: auto auto;
+  gap: 30px;
+  margin: 35px auto;
+}
+
+/* Conteiner de informações do Pokémon  */
+.infoPokemon div {
+  width: max-content;
+  margin: 0 auto;
+}
+
+/* Valor da informação  */
+.infoPokemon h1 {
+  margin: 0 auto;
+  font-size: 32px;
+  color: var(--cor-principal-50);
+  width: max-content;
+}
+
+/* Titulo da informação  */
+.infoPokemon h2 {
+  margin: 0 auto;
+  width: max-content;
+  font-size: 24px;
+  color: var(--cor-principal-75);
+}
+
+/* Responsividade para Mobile  */
+@media (max-width: 430px) {
+  /* Conteiner do Pokémon  */
+  .pokemon {
+    width: 360px;
+    padding: 20px 0;
+  }
+  /* Conteiner das informações do Pokémon  */
+  .infoPokemon {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .infoPokemon div {
+    width: max-content;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  /* Valor da informação  */
+  .infoPokemon div h1 {
+    font-size: 24px;
+  }
+
+  /* Título da informação  */
+  .infoPokemon div h2 {
+    font-size: 32px;
+  }
+
+  /* Peso do Pokemon  */
+  .infoPokemon div:nth-child(1) {
+    width: 100%;
+  }
+
+  /* Tipo e Altura do Pokemon  */
+  .infoPokemon div:nth-child(2),
+  .infoPokemon div:nth-child(3) {
+    width: 40%;
+  }
+}
