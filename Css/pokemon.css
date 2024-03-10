@@ -103,6 +103,21 @@
   color: var(--cor-principal-75);
 }
 
+#divEvolucao{
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  justify-content: center;
+  height: 30px;
+  background-color: #dcf1ff;
+}
+
+.link{
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  justify-content: center;
+}
 .link{
   color: #3498db; /* Azul claro */
   text-decoration: none; /* Remover sublinhado padrão */
@@ -161,5 +176,9 @@
   .infoPokemon div:nth-child(2),
   .infoPokemon div:nth-child(3) {
     width: 40%;
+  }
+
+  #divEvolucao{
+    width: 100vw;
   }
 }
