@@ -1,5 +1,5 @@
 /* Conteiner do Pokémon  */
-.app section {
+.pokemon {
   width: 730px;
   margin-top: 50px;
   margin-bottom: 10px;
@@ -12,14 +12,56 @@
 }
 
 /* Nome do Pokémon */
-.app section h1 {
+.pokemon h1 {
   color: var(--cor-principal);
   filter: drop-shadow(2px 0 10px var(--cor-principal));
   font-size: 36px;
+  width: 50%;
+}
+
+/* Cabeçalho das informações do Pokemon  */
+.pokemon header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+/* Formulário de info do pokemon  */
+.pokemon form {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  height: max-content;
+  align-items: center;
+  margin: 10px 0;
+  gap: 10px;
+}
+
+/* Texto do Formuláio  */
+.pokemon form label{
+  color: var(--cor-principal);
+  filter: drop-shadow(2px 0 10px var(--cor-principal-75));
+  font-size: 14px;
+  border: 2px solid var(--cor-principal-50);
+  padding: 5px 8px;
+  border-radius: 10px;
+}
+/* Animação de input checado  */
+.pokemon form input:checked ~ label{
+  background-color: var(--cor-principal-75);
+  color: white;
+}
+
+/* elementos do formulário do pokemon  */
+.pokemon form * {
+  width: max-content;
+  height: max-content;
+
 }
 
 /* Imagem do Pokémon  */
-.app section img {
+.pokemon img {
   width: 200px;
   height: 205px;
   margin: 0 auto;
@@ -36,18 +78,28 @@
 /* Conteiner de informações do Pokémon  */
 .infoPokemon div{
     width: 195px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px 0;
 }
 
 /* Valor da informação  */
 .infoPokemon h1 {
   font-size: 32px;
   color: var(--cor-principal-50);
+  width: 100%;
+  text-align: center;
+  margin: 0 0;
 }
 
 /* Titulo da informação  */
 .infoPokemon h2 {
+  width: 100%;
+  text-align: center;
   font-size: 24px;
   color: var(--cor-principal-75);
+  margin: 0 0;
 }
 
 /* Tipos de Pokémon  */
@@ -112,9 +164,13 @@
 /* Responsividade para Mobile  */
 @media (max-width: 430px) {
   /* Conteiner do Pokémon  */
-  .app section {
+  .pokemon {
     width: 360px;
     padding: 20px 0;
+  }
+  /* Nome do Pokémon */
+  .pokemon h1{
+    width: 100%;
   }
   /* Conteiner das informações do Pokémon  */
   .infoPokemon {

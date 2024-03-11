@@ -17,8 +17,15 @@
             <button type="button" id="btnConsulte">consulte</button>
         </form>
         <!-- Conteiner com informações do pokemon  -->
-        <section id="pokemon">
-            <h1 id="nomePokemon">Nome Pokemon</h1>
+        <section id="pokemon" class="pokemon">
+            <header>
+                <h1 id="nomePokemon" class="tituloPokemon">Nome Pokemon</h1>
+                <form action="">
+                    <input id="isShiny" type="checkbox" style="display:none">
+                    <label for="isShiny">Shiny</label>
+                    <h3 id="Evolucao"></h3>
+                </form>
+            </header>
             <img id="imgPokemon" src="" alt="imagem de um pokémon">
             <div class="infoPokemon">
                 <div>
@@ -41,6 +48,6 @@
         </section>
     </div>
 
-    <script src="js/script01.js"></script>
+    <script src="js/ConsultaPokemon.js"></script>
 </body>
 </html>
