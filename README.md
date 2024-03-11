@@ -1,2 +1,5 @@
-# Pokedex
-## Consulte algumas informações de um Pokémon, usando a API pokeAPI para obter essas informações
+<h1>Pokedex</h1>
+
+<h2>Aplicativo web desenvolvido por      Foi consumida a api 'PokéApi' </h2>
+
+
