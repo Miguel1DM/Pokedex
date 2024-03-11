@@ -1,6 +1,6 @@
 <h1>Pokedex</h1>
 
-<br><h3>Aplicativo web que fornece vários pokemons e suas informações, como nome, evoluções, tipos e etc... </h3>
+<br><h3>Aplicativo web, responsivo, que fornece vários pokemons e suas informações, como nome, evoluções, tipos e etc... </h3>
 
 <div align="center">
   <br><img src="https://github.com/Miguel1DM/Pokedex/blob/evolucao2/Img/telaPrincipal.png" width = "450px"></img>
@@ -9,7 +9,7 @@
 <br><h1>Consumo</h1>
 
 <P>  A documentação da Api fornece endPoints para o cosumo da mesma, na maioria das vezes são links que retornam os dados da Api.
-Os endPoints dessa Api teêm um parâmetro e ele é id ou nome do Pokemon.  </P>
+Os endPoints dessa Api pede um parâmetro e ele é id ou o nome do Pokemon.  </P>
 
 <div align="center">
   <br><img src="https://github.com/Miguel1DM/Pokedex/blob/evolucao2/Img/endPoint.png" width = "600px"></img>
@@ -28,8 +28,9 @@ Os endPoints dessa Api teêm um parâmetro e ele é id ou nome do Pokemon.  </P>
 </div>
 
 <br> <h1>Links</h1>
-*  endPoin <a href="https://pokeapi.co/docs/v2#pokemon" target="_blank">Api</a>
+*  <a href="https://pokeapi.co/docs/v2#pokemon" target="_blank">endPoint</a>
 *  Documentação <a href="https://pokeapi.co/" target="_blank">PokéApi</a>
+*  Link do aplicativo Web [Pokedex](https://pokedex-senai.netlify.app/)
 
 <br><h1>Materiais de apoio</h1>
 * Para formatação do Readme em [Markdown](https://docs.pipz.com/central-de-ajuda/learning-center/guia-basico-de-markdown#open)
