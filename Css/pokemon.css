@@ -177,7 +177,11 @@
     width: 40%;
   }
 
-  #divEvolucao{   
+  .link{
+    padding: 0;
+  }
+  
+  #divEvolucao{ 
     height: 35px;
     width: 100vw;
     margin: 0;
