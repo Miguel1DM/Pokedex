@@ -27,18 +27,16 @@ Os endPoints dessa Api teêm um parâmetro e ele é id ou nome do Pokemon.  </P>
   <br><img src="https://github.com/Miguel1DM/Pokedex/blob/evolucao2/Img/fetch.png" width = "600px"></img>
 </div>
 
-<h1>Links</h1>
-- migue
-- wdw
--
+<br> <h1>Links</h1>
+*  endPoin <a href="https://pokeapi.co/docs/v2#pokemon" target="_blank">Api</a>
+*  Documentação <a href="https://pokeapi.co/" target="_blank">PokéApi</a>
 
-- 
-
-
-
-
-*  Material de apoia para consumo de <a href="https://jera.com.br/blog/6799/desenvolvimento/guia-do-dev-iniciante-consumindo-apis" target="_blank">Api</a>\n
-*  <a href="https://pokeapi.co/" target="_blank">PokéApi</a>
+<br><h1>Materiais de apoio</h1>
+* Para formatação do Readme em [Markdown](https://docs.pipz.com/central-de-ajuda/learning-center/guia-basico-de-markdown#open)
+* [CSS](https://www.devmedia.com.br/guia/css/38149)
+* [HTML](https://www.devmedia.com.br/guia/html/38051)
+* Guia para consumo de [Api](https://jera.com.br/blog/6799/desenvolvimento/guia-do-dev-iniciante-consumindo-apis)
+* Guia para o uso de [JavaScript](https://www.devmedia.com.br/guia/javascript/34372)
 
 
 
