@@ -6,6 +6,9 @@
   <br><img src="https://github.com/Miguel1DM/Pokedex/blob/evolucao2/Img/telaPrincipal.png" width = "450px"></img>
 </div>
 
+**Api consumida:** [PokéApi](https://pokeapi.co/)
+
+
 
 
 
