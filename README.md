@@ -6,7 +6,6 @@
   <br><img src="https://github.com/Miguel1DM/Pokedex/blob/evolucao2/Img/telaPc.png" width = "400px"></img>
 
   <br>
-  <br>
   
   <img src="https://github.com/Miguel1DM/Pokedex/blob/evolucao2/Img/telaCelular.jpeg" width = "400px" heigth = "300px"></img>
 </div>
