@@ -28,7 +28,7 @@ Os endPoints dessa Api teêm um parâmetro e ele é id ou nome do Pokemon.  </P>
 </div>
 
 <h1>Links</h1>
-*  Material de apoia para consumo de <a href="https://jera.com.br/blog/6799/desenvolvimento/guia-do-dev-iniciante-consumindo-apis" target="_blank">Api</a>
+*  Material de apoia para consumo de <a href="https://jera.com.br/blog/6799/desenvolvimento/guia-do-dev-iniciante-consumindo-apis" target="_blank">Api</a>\n
 *  <a href="https://pokeapi.co/" target="_blank">PokéApi</a>
 
 
