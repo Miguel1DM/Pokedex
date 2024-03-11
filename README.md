@@ -9,7 +9,7 @@
 <br><h1>Consumo</h1>
 
 <P>  A documentação da Api fornece endPoints para o cosumo da mesma, na maioria das vezes são links que retornam os dados da Api.
-Os endPoints dessa Api teêm um parâmetro e ele é id ou nome do Pokemon. </P> **Api:** [PokéApi](https://pokeapi.co/)
+Os endPoints dessa Api teêm um parâmetro e ele é id ou nome do Pokemon. **Api:** [PokéApi](https://pokeapi.co/) </P>
 
 <div align="center">
   <br><img src="https://github.com/Miguel1DM/Pokedex/blob/evolucao2/Img/endPoint.png" width = "600px"></img>
