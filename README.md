@@ -27,9 +27,9 @@ Os endPoints dessa Api teêm um parâmetro e ele é id ou nome do Pokemon.  </P>
   <br><img src="https://github.com/Miguel1DM/Pokedex/blob/evolucao2/Img/fetch.png" width = "600px"></img>
 </div>
 
-<h1>**Links**</h1>
-*  Material de apoia para consumo de [Api]<a href="https://jera.com.br/blog/6799/desenvolvimento/guia-do-dev-iniciante-consumindo-apis" target="_blank">Api</a>)
-*  <a href="https://pokeapi.co/" target="_blank">PokeApi</a>)
+<h1>Links</h1>
+*  Material de apoia para consumo de <a href="https://jera.com.br/blog/6799/desenvolvimento/guia-do-dev-iniciante-consumindo-apis" target="_blank">Api</a>
+*  <a href="https://pokeapi.co/" target="_blank">PokéApi</a>
 
 
 
