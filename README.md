@@ -9,7 +9,7 @@
 <br><h1>Consumo</h1>
 
 <P>  A documentação da Api fornece endPoints para o cosumo da mesma, na maioria das vezes são links que retornam os dados da Api.
-Os endPoints dessa Api teêm um parâmetro e ele é id ou nome do Pokemon.  </P> **Api:** [PokéApi](https://pokeapi.co/)
+Os endPoints dessa Api teêm um parâmetro e ele é id ou nome do Pokemon.  </P>
 
 <div align="center">
   <br><img src="https://github.com/Miguel1DM/Pokedex/blob/evolucao2/Img/endPoint.png" width = "600px"></img>
@@ -21,11 +21,17 @@ Os endPoints dessa Api teêm um parâmetro e ele é id ou nome do Pokemon.  </P>
   <br><img src="https://github.com/Miguel1DM/Pokedex/blob/evolucao2/Img/json.png" width = "600px"></img>
 </div>
 
-<br><p>< Usas-se o fetch para pegar os dados do Json e consumi-los no Java Script, depois retorna os mesmo dados na aplicação  web</p>
+<br><p>  Usas-se o fetch para pegar os dados do Json e consumi-los no Java Script, depois retorna os mesmo dados na aplicação  web</p>
 
 <div align="center">
   <br><img src="https://github.com/Miguel1DM/Pokedex/blob/evolucao2/Img/fetch.png" width = "600px"></img>
 </div>
+
+<h1>**Links**</h1>
+*  Material de apoia para consumo de [Api](https://jera.com.br/blog/6799/desenvolvimento/guia-do-dev-iniciante-consumindo-apis)
+* **Api:** [PokéApi](https://pokeapi.co/)
+
+
 
 
 
