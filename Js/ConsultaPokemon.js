@@ -5,6 +5,9 @@ pokemonSection.style.display = "none";
 document
   .getElementById("btnConsulte")
   .addEventListener("click", async function () {
+    let erroElemento = document.getElementById("erroPokemon");
+    erroElemento.innerHTML = "Buscando...";
+
     // Função para deixar a primeira letra ds string Maiúscula
     let capitalizeString = (str) => {
       let primeiroChar = str.charAt(0).toUpperCase();
@@ -37,6 +40,7 @@ document
       .then((itensPokemon) => {
         // Fazendo um for para iterar cada índice da lista 'types' que contem cada tipo
         // de um Pokemon
+        erroElemento.innerHTML = "";
         for (let i = 0; i < itensPokemon.types.length; i++) {
           // Atribuindo a variável o valor do tipo do pokemon, pelo caminho do formato Json
           let tipoPokemon = itensPokemon.types[i].type.name;
