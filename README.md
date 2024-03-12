@@ -41,11 +41,6 @@ Os endPoints dessa Api pede um parâmetro e ele é id ou o nome do Pokemon.  </P
 * Guia para consumo de [Api](https://jera.com.br/blog/6799/desenvolvimento/guia-do-dev-iniciante-consumindo-apis)
 * Guia para o uso de [JavaScript](https://www.devmedia.com.br/guia/javascript/34372)
 
-<br><h1>Desenvolvedores</h1>
-* [Miguel Pereira](https://github.com/Miguel1DM)
-* [Rafael Novais](https://github.com/oN0V41S)
-
-
 
 
 
