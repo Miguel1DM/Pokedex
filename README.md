@@ -21,7 +21,10 @@ Se a aplicação não conseguir buscar o Pokémon digitado na caixa, mostra o er
   - HTML5 
   - CSS3 
   - Markdown 
-  - Javascript 
+  - Javascript
+    
+## Site
+*  [Pokedex](https://pokedex-senaiii.netlify.app/)
 
 ### Referências 
 [PokéAPI DOC](https://pokeapi.co/docs/v2) 
