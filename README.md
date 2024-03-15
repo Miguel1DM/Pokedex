@@ -4,7 +4,7 @@
 
 <div align="center">
 
-  <br><img src="https://github.com/Miguel1DM/Pokedex/blob/evolucao2/Img/telaCelular.jpeg" width = "400px" heigth = "300px"></img>
+  <br><img src="https://github.com/Miguel1DM/Pokedex/blob/versao2/Img/telaCelular.jpeg" width = "400px" heigth = "300px"></img>
 
 </div>
 
@@ -14,19 +14,19 @@
 Os endPoints dessa Api pede um parâmetro e ele é id ou o nome do Pokemon.  </P>
 
 <div align="center">
-  <br><img src="https://github.com/Miguel1DM/Pokedex/blob/evolucao2/Img/endPoint.png" width = "600px"></img>
+  <br><img src="https://github.com/Miguel1DM/Pokedex/blob/versao2/Img/endPoint.png" width = "600px"></img>
 </div>
 
 <br><p>  Após ser passado o parâmetro é retornado os dados no formato Json</p>
 
 <div align="center">
-  <br><img src="https://github.com/Miguel1DM/Pokedex/blob/evolucao2/Img/json.png" width = "600px"></img>
+  <br><img src="https://github.com/Miguel1DM/Pokedex/blob/versao2/Img/json.png" width = "600px"></img>
 </div>
 
 <br><p>  Usas-se o fetch para pegar os dados do Json e consumi-los no Java Script, depois retorna os mesmo dados na aplicação  web</p>
 
 <div align="center">
-  <br><img src="https://github.com/Miguel1DM/Pokedex/blob/evolucao2/Img/fetch.png" width = "600px"></img>
+  <br><img src="https://github.com/Miguel1DM/Pokedex/blob/versao2/Img/fetch.png" width = "600px"></img>
 </div>
 
 <br> <h1>Links</h1>
