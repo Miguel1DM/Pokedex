@@ -1,3 +1,13 @@
+/* Conteiner de Pokemons  */
+.pokemonList{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  gap: 15px;
+}
+
 /* Conteiner do Pokémon  */
 .pokemon {
   width: 520px;
@@ -21,11 +31,13 @@
 }
 
 /* Nome do Pokémon */
-.pokemon .tituloPokemon {
+.tituloPokemon {
   width: 50%;
   color: var(--cor-principal);
   filter: drop-shadow(2px 0 10px var(--cor-principal));
   font-size: 36px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 /* Formulário de info do pokemon  */

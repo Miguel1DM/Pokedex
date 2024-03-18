@@ -8,6 +8,13 @@ export async function infosPokemon(urlPokemon, nomPokemon, idContainer){
         let kg = hectograma / 10;
         return kg.toFixed(0);
     }
+
+    // Formatador de String
+    let capitalizeString = (str) => {
+        let primeiroChar = str.charAt(0).toUpperCase()
+        let restoStr = str.slice(1);
+        return primeiroChar + restoStr
+    }
     
     const tiposPokemon = [];
     let divFinal = "";
@@ -32,16 +39,41 @@ export async function infosPokemon(urlPokemon, nomPokemon, idContainer){
 
             // Pegando as informações e montando uma Div com elas
             divFinal = `
-                <div class"infosPokemon">
-                    <h3> Nome Pokemon: ${nomePokemon}</h3>
-                    <img id="imagePokemon" src="${itensPokemon.sprites.other.home.front_default}" class="imgs"></img>
-                    <h3> Peso: ${convertorHgKg(itensPokemon.weight)} Kg</h3>
-                    <h3> ALtura: ${itensPokemon.height} M</h3>
-                    <h3> Tipo: ${tiposPokemon} </h3>
-                    <h3> Vida: ${itensPokemon.stats[0].base_stat}</h3>
-                    <h3> Attack Básico: ${itensPokemon.stats[1].base_stat}</h3>
-                    <h3> Defesa Básica: ${itensPokemon.stats[2].base_stat}</h3>
-                    <h3> Velocidade: ${itensPokemon.stats[5].base_stat}</h3>
+                <div class"pokemon">
+                <h1 class="tituloPokemon">${capitalizeString(nomePokemon)}</h1>
+                <div class="containerImg">
+                    <img id="imgPokemon" src="${itensPokemon.sprites.other.home.front_default}" alt="imagem de um pokémon">
+                </div>
+                <div class="infoPokemon">
+                    <div>
+                        <h1 id="pesoPokemon">${convertorHgKg(itensPokemon.weight)} Kg</h1>
+                        <h2>Peso</h2>
+                    </div>
+                    <div>
+                        <h1 id="tipoPokemon" class="voador">${tiposPokemon}</h1>
+                        <h2>Tipo</h2>
+                    </div>
+                    <div>
+                        <h1 id="alturaPokemon">${itensPokemon.height} M</h1>
+                        <h2>Altura</h2>
+                    </div>
+                    <div>
+                        <h1 id="vidaPokemon">${itensPokemon.stats[0].base_stat} HP</h1>
+                        <h2>Vida</h2>
+                    </div>
+                    <div>
+                        <h1> ${itensPokemon.stats[1].base_stat}</h1>
+                        <h2> Attack Básico</h2>
+                    </div>
+                    <div>
+                        <h1> ${itensPokemon.stats[2].base_stat}</h1>
+                        <h2> Defesa Básica</h2>
+                    </div>
+                    <div>
+                        <h1> ${itensPokemon.stats[5].base_stat}</h1>
+                        <h2> Velocidade</h2>
+                    </div>
+                    
                 </div>
             `
 
